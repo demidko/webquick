@@ -1,19 +1,29 @@
-# Library
+# webQUICK API
 
-Java library template written in the Kotlin language.
+Java API для webQUICK терминала. 
 
-## Download
+## Что это и зачем?
 
-You need Gradle, or Maven, or other build tool.
+Сейчас у российских брокеров нет полноценных аналогов Interactive Brokers API (HTTP, FIX).
+
+1. Есть Tinkoff Invest API (HTTP), который при близком рассмотрении кажется игрушечным.
+2. Есть более стандартный для России QUICK терминал который дает писать скрипты на Lua, однако он имеет два серьезных минуса:
+     1. Доступен только под Windows. 
+     2. Облачные Fix коннекторы для QUICK, чтобы писать на нормальном языке, стоят дорого.
+4. Есть новый webQUICK терминал который работает из браузера. И у него нет заявленного API ...или погодите, все же есть? Ведь любой веб-сайт работает по HTTP..
+
+Эта библиотека дает доступ к webQUICK API оборачивая в себя работу с HTTP. 
+
+## Как скачать?
+
+Вам пондаобится Gradle, Maven, или другая система сборки.
 
 [![](https://jitpack.io/v/demidko/library.svg)](https://jitpack.io/#demidko/library)
 
-See also [JitPack documentation](https://jitpack.io/docs/#publishing-on-jitpack).
-
-## Usage
+## Как пользоваться?
 
 ```kotlin
-usage.example.placeholder()
+Тут будет инструкция немного попозже
 ```
 
 
