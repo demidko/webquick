@@ -5,33 +5,26 @@ repositories {
 plugins {
   `java-library`
   `maven-publish`
-  kotlin("jvm") version "1.6.0"
+  kotlin("jvm") version "1.6.10"
 }
 dependencies {
-  // "api" dependencies is exported to consumers, that is to say found on their compile classpath.
-  api("org.apache.commons:commons-math3:3.6.1")
-  // "implementation" dependencies is private for your library
-  implementation("ch.qos.logback:logback-classic:1.2.7")
-
-  testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+  implementation("ch.qos.logback:logback-classic:1.2.10")
+  testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
-  testImplementation("io.mockk:mockk:1.12.0")
+  testImplementation("io.mockk:mockk:1.12.2")
 }
 tasks.compileKotlin {
-  kotlinOptions.jvmTarget = "17"
-  kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime"
+  kotlinOptions.jvmTarget = "11"
 }
 tasks.compileTestKotlin {
-  kotlinOptions.jvmTarget = "17"
-  kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime"
+  kotlinOptions.jvmTarget = "11"
 }
 tasks.test {
   useJUnitPlatform()
 }
 publishing {
   publications {
-    create<MavenPublication>("library") {
-      groupId = "com.github.demidko"
+    create<MavenPublication>("webquick") {
       from(components["java"])
     }
   }
