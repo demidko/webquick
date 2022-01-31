@@ -16,7 +16,9 @@ Java API для торговли на Московской Бирже с бро�
 
 ## Как установить?
 
-1. Получите [доступ к webQUICK](https://www.sberbank.ru/ru/person/investments/broker_service/quik). 
+Вам понадобится брокерский счет в СберБанке. Это можно сделать парой кликов.
+
+1. Получите [доступ к webQUICK](https://www.sberbank.ru/ru/person/investments/broker_service/quik). Проверить свои действия можно [по инструкции](https://www.sberbank.ru/ru/person/investments/broker_service/quik?tab=install).
 2. Вам понадобится Gradle, Maven, или другая система сборки.  
 
    [![](https://jitpack.io/v/demidko/webquick.svg)](https://jitpack.io/#demidko/webquick)
