@@ -8,6 +8,7 @@ plugins {
   kotlin("jvm") version "1.6.10"
 }
 dependencies {
+  implementation("com.github.vidstige:jadb:v1.2.1")
   implementation("ch.qos.logback:logback-classic:1.2.10")
   testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
   testImplementation("com.willowtreeapps.assertk:assertk-jvm:0.25")
